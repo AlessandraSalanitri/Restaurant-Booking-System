@@ -9,7 +9,7 @@ and generally talk in natural language.
 It wraps a mock restaurant booking API with a FastAPI + LangChain agent and a clean React/TypeScript UI.
 ```
 
-** Highlights ** 
+**Highlights** 
 ```
 - Two ways to book: natural-language chat or a one-tap action bar with buttons for Check Availability, Book a Table, View / Edit / Cancel. For users who prefer clicks over typing.
 
@@ -24,7 +24,7 @@ Modular architecture: FastAPI services, LangChain tools, and React flows separat
 
 
 ## Modular architecture with services, tools, and UI flows separated.
-
+```
 /app                         # Backend (FastAPI + LangChain agent)
   ├─ main.py                 # FastAPI app
   ├─ routers/chat.py         # /api/chat endpoint (agent entry point)
@@ -59,16 +59,8 @@ Agent tools (LangChain):
     - Get Booking
     - Update Booking
     - Cancel Booking
-
+```
 Each tool calls the service layer and returns user-friendly text.
-
-## Requirements
-Backend: 
-```Python 3.11+, FastAPI, Uvicorn, Requests, LangChain(+community), python-dotenv, dateparser
-```
-Frontend: 
-```Node 18+, React + TypeScript
-```
 
 # Setup & Run
     - Backend
