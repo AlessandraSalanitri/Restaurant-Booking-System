@@ -71,7 +71,8 @@ Each tool calls the service layer and returns user-friendly text.
 # Setup & Run
 ## Backend
    
-```python -m venv .venv
+```
+python -m venv .venv
 .venv/Scripts/activate  [for Windows]
 or
 source .venv/bin/activate [on macOS/Linux]
@@ -88,11 +89,13 @@ OPENAI_API_KEY= OPEN_AI_REAL_KEY_ADDED_HERE
 
 python -m app
 ```
+
 FastAPI on http://0.0.0.0:8547
-```
+
 
 ## Frontend
-```cd client
+```
+cd client
 npm install
 echo "REACT_APP_API_TOKEN=MOCK_API_TOKEN" > .env** (same token as BACKEND_BEARER_TOKEN)
 npm start
