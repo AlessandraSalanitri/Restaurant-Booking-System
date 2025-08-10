@@ -107,20 +107,17 @@ React dev server, http://localhost:3000
 **Natural-language normalization**
 ```
 On the backend:
-```Dates via utils/dates.resolve_dates(), supports “this weekend” (upcoming Sat/Sun), “next Friday”, “this Sunday”,
+```
+Dates via utils/dates.resolve_dates(), supports “this weekend” (upcoming Sat/Sun), “next Friday”, “this Sunday”,
 as well as explicit dates using dateparser.
 Timezone defaults to Europe/London but can be changed.
-```
-```Times via normalize_time(), accepts 7pm, 7:30 pm, 19, 19:30, normalizes to HH:MM:SS.
-```
-```Party size via normalize_party_size(), supports “for 4”, “party of 6”, “two people”.
-```
-```Agent design - 
+Times via normalize_time(), accepts 7pm, 7:30 pm, 19, 19:30, normalizes to HH:MM:SS.
+Party size via normalize_party_size(), supports “for 4”, “party of 6”, “two people”.
+Agent design - 
 Tool-first: the agent decides which tool to invoke and passes a simple key: value string (or natural language).
-```
-```Validation before API: tools sanitize/normalize inputs to avoid 422 errors.
-```
-```Helpful responses: tools craft human messages (“That exact time isn’t available. On Friday we have 7:00, 7:30… Which time would you like?”).
+Validation before API: tools sanitize/normalize inputs to avoid 422 errors.
+Helpful responses: tools craft human messages 
+(“That exact time isn’t available. On Friday we have 7:00, 7:30… Which time would you like?”).
 ```
 
 ## Button Options Flows:
